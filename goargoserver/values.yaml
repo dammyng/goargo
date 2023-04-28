@@ -5,3 +5,6 @@ image:
   pullPolicy: Always
 env:
   ENVIRONMENT: production
+service:
+  type: ClusterIP
+  port: 8080
