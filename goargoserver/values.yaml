@@ -6,5 +6,5 @@ image:
 env:
   ENVIRONMENT: production
 service:
-  type: ClusterIP
+  type: NodePort
   port: 8080
