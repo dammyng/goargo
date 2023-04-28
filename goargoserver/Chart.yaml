@@ -1,0 +1,4 @@
+apiVersion: v2
+name: goargoserver
+description: A Helm chart for deploying the GoArgoServer application
+version: 0.1.0

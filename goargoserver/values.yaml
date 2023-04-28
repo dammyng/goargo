@@ -1,0 +1,7 @@
+replicaCount: 2
+image:
+  repository: cabhub/goargoserver
+  tag: latest
+  pullPolicy: Always
+env:
+  ENVIRONMENT: production

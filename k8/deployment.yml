@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: goargo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: goargoserver
+  template:
+    metadata:
+      labels:
+        app: goargoserver
+    spec:
+      containers:
+        - name: goargoserver
+          image: cabhub/goargoserver:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ENVIRONMENT
+              value: production
